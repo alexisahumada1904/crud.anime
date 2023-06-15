@@ -1,0 +1,27 @@
+<section class="container">
+    <h3 class="display-6 text-center my-5">Información sobre <span class="fw-bolder display-5">{{anime.nombre}}</span></h3>
+    <table class="table table-striped table-hover">
+    {{#if anime}}
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Genero</th>
+                <th scope="col">Año</th>
+                <th scope="col">Autor</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td scope="row">{{anime.nombre}}</td>
+                    <td scope="row">{{anime.genero}}</td>
+                    <td scope="row">{{anime.year}}</td>
+                    <td scope="row">{{anime.autor}}</td>
+                </tr>
+        </tbody>
+    {{else}}
+        <div class="text-center">
+            <h2>No se encuentra ese anime.</h2>
+        </div>
+    {{/if}}
+</table>
+</section>
